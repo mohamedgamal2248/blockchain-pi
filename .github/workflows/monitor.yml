@@ -4,9 +4,11 @@ name: Uptime monitor
 # or the indexer is down twice in a row (a minute apart), it opens an "outage" issue, which
 # GitHub sends to the repository owner by email and to the GitHub mobile app. When everything
 # is healthy again, it comments and closes the issue.
+# PAUSED: the site is switched off on purpose (to save Vercel CPU), so a schedule here would only
+# report a false outage. To resume, unpause the Vercel project and restore the schedule:
+#   schedule:
+#     - cron: "7,37 * * * *"
 on:
-  schedule:
-    - cron: "7,37 * * * *"
   workflow_dispatch:
 
 permissions:
