@@ -422,7 +422,7 @@ export async function ingestAll(sql: Sql, nets: Network[], budgetMs: number, ext
 }
 
 /**
- * The scheduler calls every 5 minutes. A call that lands within `minGapSec` of the previous
+ * The scheduler calls every 10 minutes. A call that lands within `minGapSec` of the previous
  * finished run (e.g. a manual or duplicate trigger) is skipped at the cost of one small query.
  */
 export async function shouldSkip(sql: Sql, net: Network, minGapSec = 270) {

@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
 /**
- * Runs the indexer (at most ~25 s, normally a second or two). Called every 5 minutes by Supabase
+ * Runs the indexer (at most ~25 s, normally a second or two). Called every 10 minutes by Supabase
  * pg_cron with CRON_SECRET as a bearer token, or any scheduler that sends the same header.
  */
 export async function GET(req: NextRequest) {

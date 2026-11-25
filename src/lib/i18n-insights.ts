@@ -39,7 +39,7 @@ const en = {
     large_deposits: "Large deposits to exchanges (24h)",
     order_book: "Order books: bids vs asks within 2%",
   } as Record<ComponentKey, string>,
-  updatedEvery: "Updated every 5 minutes.",
+  updatedEvery: "Updated every 10 minutes.",
   accuracy: "Track record",
   accuracyTitle: "How accurate is the index?",
   accuracyIntro:
@@ -164,7 +164,7 @@ const ar: InsightDict = {
     large_deposits: "إيداعات كبيرة للمنصات (24 ساعة)",
     order_book: "دفاتر الأوامر: الشراء مقابل البيع في حدود 2%",
   },
-  updatedEvery: "بيتحدث كل 5 دقايق.",
+  updatedEvery: "بيتحدث كل 10 دقايق.",
   accuracy: "سجل الدقة",
   accuracyTitle: "المؤشر دقيق قد إيه؟",
   accuracyIntro:
