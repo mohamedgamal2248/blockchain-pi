@@ -47,7 +47,7 @@ export async function healthChecks(net: Network, fresh = true): Promise<Check[]>
         const r = rows.find((x) => x.stream === s);
         out.push({
           name: `Indexer: ${s}`,
-          state: !r ? "down" : r.age > 900 ? "down" : r.age > 420 ? "degraded" : "ok",
+          state: !r ? "down" : r.age > 1800 ? "down" : r.age > 900 ? "degraded" : "ok",
           detail: r ? `${Math.round(r.age / 60)} min` : "not started",
         });
       }
